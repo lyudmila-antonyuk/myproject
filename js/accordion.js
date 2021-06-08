@@ -1,6 +1,6 @@
 let accordion = (function () {
   let $accordion = $(".incentivized");
-  let $accordion_header = $accordion.find(".conten_concepts");
+  let $accordion_header = $accordion.find(".content_concepts");
   let $accordion_item = $(".businesses_sprin");
 
   // default settings
@@ -35,7 +35,7 @@ let accordion = (function () {
         $this[0] !=
           $this
             .closest(".incentivized")
-            .find("> .businesses_sprin.active > .conten_concepts")[0]
+            .find("> .businesses_sprin.active > .content_concepts")[0]
       ) {
         $this
           .closest(".incentivized")

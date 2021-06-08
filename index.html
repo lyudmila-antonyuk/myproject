@@ -8,123 +8,136 @@
 	<!-- CSS Files-->
 
 	<link rel="stylesheet" href="./css/style.css">
-	<link rel="stylesheet" href="./css/responsive.css">
-
+	<!-- <link rel="stylesheet" href="./css/responsive.css"> -->
 	<link rel="stylesheet" href="./css/accordion.css">
+	<link rel="stylesheet" href="./bootstrap-5.0.0-alpha1-dist/bootstrap-5.0.0-alpha1-dist/css/bootstrap.css">
 </head>
 
 <body>
+	<header id="header" class="fixed-top">
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<div class="container">
+				<a href="#" class="navbar-brand">Фотостудия Марианны Смирновой</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent"
+					aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-	<div class="row">
-		<div class="headerlogo four columns">
-			<div class="logo">
-				<a href="index.html">
-					<h1>Добро пожаловать!</h1>
-				</a>
+				<div class="collapse navbar-collapse" id="navContent">
+					<ul class="navbar-nav mr-auto mb-3 mb-lg-0">
+						<li class="nav-item">
+							<a href="#" class="nav-link">Домой</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a href="" class="nav-link dropdown-toggle" id="navDrop" role="button" data-toggle="dropdown"
+								aria-expanded="false">Наши работы</a>
+							<ul class="dropdown-menu" aria-labelledby="navDrop">
+								<li><a href="#" class="dropdown-item">Работа №1</a></li>
+								<li><a href="#" class="dropdown-item">Работа №2</a></li>
+								<li><a href="#" class="dropdown-item">Работа №3</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">О нас</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Оплатить</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Контакты</a>
+						</li>
+					</ul>
+					<form action="" class="d-flex"></form>
+				</div>
 			</div>
-		</div>
-		<div class="headermenu eight columns noleftmarg">
-			<nav id="nav-wrap">
-				<ul id="main-menu" class="nav-bar sf-menu">
-					<li class="current">
-						<a href="index.html">Домой</a>
-					</li>
-					<li>
-						<a href="#">Наши работы</a>
-						<ul>
-							<li><a href="#">Работа №1</a></li>
-							<li><a href="#">Работа №2</a></li>
-							<li><a href="#">Работа №3</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="#">О нас</a>
-					</li>
-					<li>
-						<a href="#">Оплатить</a>
-					</li>
-					<li>
-						<a href="./contact.html">Контакты</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	</div>
+		</nav>
+	</header>
 
 	<!-- SLIDER 
 ================================================== -->
-	<div id="ei-slider" class="ei-slider">
-		<ul class="ei-slider-large">
-			<li>
-				<img src="./img/1.jpg" alt="image01" class="responsiveslide">
-				<div class="ei-title">
-					<h2>Фотографируйте чтобы</h2>
-					<h3>Мечтать</h3>
-				</div>
-			</li>
-			<li>
-				<img src="./img/2.jpg" alt="image02" class="responsiveslide">
-				<div class="ei-title">
-					<h2>Фотографируйте чтобы</h2>
-					<h3>Видеть</h3>
-				</div>
-			</li>
-			<li>
-				<img src="./img/3.jpg" alt="image03" class="responsiveslide">
-				<div class="ei-title">
-					<h2>Фотографируйте чтобы</h2>
-					<h3>Верить</h3>
-				</div>
-			</li>
-			<li>
-				<img src="./img/4.jpg" alt="image04" class="responsiveslide">
-				<div class="ei-title">
-					<h2>Фотографируйте чтобы</h2>
-					<h3>Надеяться</h3>
-				</div>
-			</li>
-			<li>
-				<img src="./img/5.jpg" alt="image05" class="responsiveslide">
-				<div class="ei-title">
-					<h2>Фотографируйте чтобы</h2>
-					<h3>Смеяться</h3>
-				</div>
-			</li>
-			<li>
-				<img src="./img/6.jpg" alt="image06" class="responsiveslide">
-				<div class="ei-title">
-					<h2>Фотографируйте чтобы</h2>
-					<h3>Наслаждаться</h3>
-				</div>
-			</li>
-			<li>
-				<img src="./img/7.jpg" alt="image07" class="responsiveslide">
-				<div class="ei-title">
-					<h2>Фотографируйте чтобы</h2>
-					<h3>Жить!</h3>
-				</div>
-			</li>
+	<div class="container">
+		<div class="row">
+			<div id="ei-slider" class="ei-slider">
+				<ul class="ei-slider-large">
+					<li>
+						<img class="w-100 responsiveslide" src="./img/1.jpg" alt="image01">
+						<div class="ei-title">
+							<h2><b class="start">Фотографируйте чтобы</b><br>
+								<b class="end">Мечтать</b>
+							</h2>
+						</div>
+					</li>
+					<li>
+						<img class="w-100 responsiveslide" src="./img/2.jpg" alt="image02">
+						<div class="ei-title">
+							<h2><b class="start">Фотографируйте чтобы</b><br>
+								<b class="end">Видеть</b>
+							</h2>
+						</div>
+					</li>
+					<li>
+						<img class="w-100 responsiveslide" src="./img/3.jpg" alt="image03">
+						<div class="ei-title">
+							<h2><b class="start">Фотографируйте чтобы</b><br>
+								<b class="end">Верить</b>
+							</h2>
+						</div>
+					</li>
+					<li>
+						<img class="w-100 responsiveslide" src="./img/4.jpg" alt="image04">
+						<div class="ei-title">
+							<h2><b class="start">Фотографируйте чтобы</b><br>
+								<b class="end">Надеяться</b>
+							</h2>
+						</div>
+					</li>
+					<li>
+						<img class="w-100 responsiveslide" src="./img/5.jpg" alt="image05">
+						<div class="ei-title">
+							<h2><b class="start">Фотографируйте чтобы</b><br>
+								<b class="end">Смеяться</b>
+							</h2>
+						</div>
+					</li>
+					<li>
+						<img class="w-100 responsiveslide" src="./img/6.jpg" alt="image06">
+						<div class="ei-title">
+							<h2><b class="start">Фотографируйте чтобы</b><br>
+								<b class="end">Наслаждаться</b>
+							</h2>
+						</div>
+					</li>
+					<li>
+						<img class="w-100 responsiveslide" src="./img/7.jpg" alt="image07">
+						<div class="ei-title">
+							<h2><b class="start">Фотографируйте чтобы</b><br>
+								<b class="end">Жить!</b>
+							</h2>
+						</div>
+					</li>
 
-		</ul>
-		<!-- slider-thumbs -->
-		<ul class="ei-slider-thumbs">
-			<li class="ei-slider-element">Current</li>
-			<li><a href="#">Slide 1</a></li>
-			<li><a href="#">Slide 2</a></li>
-			<li><a href="#">Slide 3</a></li>
-			<li><a href="#">Slide 4</a></li>
-			<li><a href="#">Slide 5</a></li>
-			<li><a href="#">Slide 6</a></li>
-			<li><a href="#">Slide 7</a></li>
-		</ul>
-	</div>
-	<div class="minipause">
+				</ul>
+				<!-- slider-thumbs -->
+				<ul class="ei-slider-thumbs">
+					<li class="ei-slider-element">Current</li>
+					<li><a href="#">Slide 1</a></li>
+					<li><a href="#">Slide 2</a></li>
+					<li><a href="#">Slide 3</a></li>
+					<li><a href="#">Slide 4</a></li>
+					<li><a href="#">Slide 5</a></li>
+					<li><a href="#">Slide 6</a></li>
+					<li><a href="#">Slide 7</a></li>
+				</ul>
+			</div>
+			<div class="minipause">
+			</div>
+		</div>
 	</div>
 	<!-- SUBHEADER
 ================================================== -->
-	<div id="subheader">
+	<div class="container">
 		<div class="row">
-			<div class="twelve columns">
+			<div class="subheader">
 				<p class="text-center">
 					"Увидеть необычное в обычном... <br>В деталях сложное суметь узреть.<br> Кому-то это безразлично <br>А для
 					кого-то счастье - лицезреть." <br>
@@ -136,171 +149,176 @@
 
 	<!-- CONTENT 
 ================================================== -->
-	<div class="row">
-		<div class="twelve columns">
-			<div class="centersectiontitle">
-				<h4>Что мы умеем</h4>
-			</div>
-		</div>
-		<div class="four columns">
-			<h5>Фотографировать</h5>
-			<p>
-				У нас самые красивые локации, самый необычный реквизит, новейшее оборудование и лучшая логистика. Мы - настоящие
-				профессионалы своего дела!
-			</p>
-			<p>
-				<a href="#" class="readmore">Узнать больше</a>
-			</p>
-		</div>
-		<div class="four columns">
-			<h5>Обрабатывать</h5>
-			<p>
-				Мы оказываем профессиональные услуги фотошопа во всех сферах обработки и улучшения качества фото, незаметного
-				фотомонтажа и изменения фактов на изображении.
-			</p>
-			<p>
-				<a href="#" class="readmore">Узнать больше</a>
-			</p>
-		</div>
-		<div class="four columns">
-			<h5>Обучать</h5>
-			<p>
-				Мы научим Вас всему, что знаем сами. Вы узнаете, как ставить свет, как строить кадр при помощи композиции, как
-				выбирать ракурс, и многое другое! После окончания курса Вы сможете зарабатывать от 40 000 руб. в месяц.
-			</p>
-			<p>
-				<a href="#" class="readmore">Узнать больше</a>
-			</p>
-		</div>
-	</div>
-	<div class="hr">
-	</div>
-	<!-- TESTIMONIALS 
-================================================== -->
-
-	<!-- accordion -->
-	<div class="accordion incentivized">
-		<div class="place_sometimes businesses_sprin active">
-			<div class="executed_earch conten_concepts">Часто задаваемые вопросы</div>
-			<div class="organic_traffic posite_organic">
-				<div class="amounts_organic">
-					Здесь Вы можете увидеть наиболее часто задавамые вопросы, а также узнать ответы на них.
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="centersectiontitle">
+					<h3>Что мы умеем</h3>
 				</div>
 			</div>
-		</div>
-		<div class="place_sometimes businesses_sprin">
-			<div class="executed_earch conten_concepts">Есть ли у Вас свои фотографы?</div>
-			<div class="organic_traffic posite_organic">
-				<div class="amounts_organic">
-					Да, у нас есть своя команда профессиональных фотографов с различной специализацией. Вы можете выбрать
-					фотографа по интерьерам, по еде, природе, каталожного или свадебного фотографа.
-				</div>
-			</div>
-		</div>
-		<div class="place_sometimes businesses_sprin">
-			<div class="executed_earch conten_concepts">Могу ли я прислать Вам фото своего дедушки для колоризации?</div>
-			<div class="organic_traffic posite_organic">
-				<div class="amounts_organic">
-					Да, можете. С помощью современного оборудования мы быстро, качественно и реалистично колоризируем Ваши
-					фотографии.
-				</div>
-			</div>
-		</div>
-		<div class="place_sometimes businesses_sprin">
-			<div class="executed_earch conten_concepts">Можно ли пойти на Ваши курсы, имея самую простую зеркалку, или
-				обязательно нужен крутой фотоаппарат? </div>
-			<div class="organic_traffic posite_organic">
-				<div class="amounts_organic">
-					Вы можете прийти к нам на курс с самой обычной фототехникой. Красивое фото можно сделать практически на любой
-					аппарат, наша задача научить Вас этому!
-				</div>
-			</div>
-		</div>
-		<div class="place_sometimes businesses_sprin">
-			<div class="executed_earch conten_concepts">Смогу ли я после Ваших курсов зарабатывать на жизнь фотографией?
-			</div>
-			<div class="organic_traffic posite_organic">
-				<div class="amounts_organic">
-					Сможете. Наша команда разработала уникальный обучающий курс, который содержит в себе большой объем
-					теоретических и практических знаний. Уже во время его прохождения Вы сможете начать снимать самостоятельно.
-				</div>
-			</div>
-		</div>
-		<div class="place_sometimes businesses_sprin">
-			<div class="executed_earch conten_concepts">Могу ли я пройти Ваш курс, находясь в другом городе?</div>
-			<div class="organic_traffic posite_organic">
-				<div class="amounts_organic">
-					Да, можете. Наш курс полностью дистанционный, Вы можете пройти его, находясь в любой точке мира.
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- accordion end -->
-
-
-
-	<div class="row">
-		<div class="twelve columns">
-			<div id="testimonials">
-				<blockquote>
+			<div class="row">
+				<div class="skills col-sm-4 text-center">
+					<h4>Фотографировать</h4>
 					<p>
-						Проходил курс в январе 2021 года. Всё очень понравилось, информация подаётся легко, без лишней воды.
-						Кураторы сопровождают в течение всего курса, всё доходчиво объясняют. Спасибо! <cite> Пётр Петров -
-							Казань</cite>
+						У нас самые красивые локации, самый необычный реквизит, новейшее оборудование и лучшая логистика. Мы -
+						настоящие
+						профессионалы своего дела!
 					</p>
-				</blockquote>
-				<blockquote>
+					<a href="#" class="readmore">Узнать больше</a>
+				</div>
+				<div class="skills col-sm-4 text-center">
+					<h4>Обрабатывать</h4>
 					<p>
-						Из-за пандемии осталась без работы. В конце апреля 2020 г. решила приобрести Ваш курс, тем более, что
-						зеркалка лет 5 валялась без дела. После курса стала фотографировать друзей, они стали советовать меня своим
-						друзьям итд. И вот сегодня у меня есть любимая работа со стабильной зарплатой! Курсом очень довольна,
-						спасибо! <cite>Марина Маринина - Санкт-Петербург</cite>
+						Мы оказываем профессиональные услуги фотошопа во всех сферах обработки и улучшения качества фото,
+						незаметного
+						фотомонтажа и изменения фактов на изображении.
 					</p>
-				</blockquote>
-				<blockquote>
+					<a href="#" class="readmore">Узнать больше</a>
+				</div>
+				<div class="skills col-sm-4 text-center">
+					<h4>Обучать</h4>
 					<p>
-						За две недели до свадьбы неожиданно остался без фотографа. Невеста в панике, у фотографов обычно всё
-						расписано на полгода вперед, так быстро не найти... Друзья посоветовали Вашу команду. Встретились в тот же
-						день, всё обговорили, подписали договор. В день свадьбы всё прошло идеально, фотографов почти не было
-						заметно, а свадебный альбом получился очень прикольным, красочным и уютным! Спасибо Вам и Вашей команде!
-						<cite> Петр Петров - Москва</cite>
+						Мы научим Вас всему, что знаем сами. Вы узнаете, как ставить свет, как строить кадр при помощи композиции,
+						как
+						выбирать ракурс, и многое другое! После окончания курса Вы сможете зарабатывать от 40 000 руб. в месяц.
 					</p>
-				</blockquote>
+					<a href="#" class="readmore">Узнать больше</a>
+				</div>
 			</div>
-			<!--end testimonials-->
 		</div>
 	</div>
+
+
+
+	<!-- TESTIMONIALS ================================================ -->
+
+	<!-- ACCORDION =================================================== -->
+	<div class="container">
+		<div class="row">
+			<div class="accordion incentivized">
+				<div class="times businesses_sprin active">
+					<div class="executed_search content_concepts">Часто задаваемые вопросы</div>
+					<div class="organic_traffic posite_organic">
+						<div class="amounts_organic">
+							Здесь Вы можете увидеть наиболее часто задавамые вопросы, а также узнать ответы на них.
+						</div>
+					</div>
+				</div>
+				<div class="place_sometimes businesses_sprin">
+					<div class="executed_search content_concepts">Есть ли у Вас свои фотографы?</div>
+					<div class="organic_traffic posite_organic">
+						<div class="amounts_organic">
+							Да, у нас есть своя команда профессиональных фотографов с различной специализацией. Вы можете выбрать
+							фотографа по интерьерам, по еде, природе, каталожного или свадебного фотографа.
+						</div>
+					</div>
+				</div>
+				<div class="place_sometimes businesses_sprin">
+					<div class="executed_search content_concepts">Могу ли я прислать Вам фото своего дедушки для колоризации?
+					</div>
+					<div class="organic_traffic posite_organic">
+						<div class="amounts_organic">
+							Да, можете. С помощью современного оборудования мы быстро, качественно и реалистично колоризируем Ваши
+							фотографии.
+						</div>
+					</div>
+				</div>
+				<div class="place_sometimes businesses_sprin">
+					<div class="executed_search content_concepts">Можно ли пойти на Ваши курсы, имея самую простую зеркалку, или
+						обязательно нужен крутой фотоаппарат? </div>
+					<div class="organic_traffic posite_organic">
+						<div class="amounts_organic">
+							Вы можете прийти к нам на курс с самой обычной фототехникой. Красивое фото можно сделать практически на
+							любой
+							аппарат, наша задача научить Вас этому!
+						</div>
+					</div>
+				</div>
+				<div class="place_sometimes businesses_sprin">
+					<div class="executed_search content_concepts">Смогу ли я после Ваших курсов зарабатывать на жизнь
+						фотографией?
+					</div>
+					<div class="organic_traffic posite_organic">
+						<div class="amounts_organic">
+							Сможете. Наша команда разработала уникальный обучающий курс, который содержит в себе большой объем
+							теоретических и практических знаний. Уже во время его прохождения Вы сможете начать снимать
+							самостоятельно.
+						</div>
+					</div>
+				</div>
+				<div class="place_sometimes businesses_sprin">
+					<div class="executed_search content_concepts">Могу ли я пройти Ваш курс, находясь в другом городе?</div>
+					<div class="organic_traffic posite_organic">
+						<div class="amounts_organic">
+							Да, можете. Наш курс полностью дистанционный, Вы можете пройти его, находясь в любой точке мира.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ACCORDION END ===================================== -->
+
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div id="testimonials">
+					<blockquote>
+						<p>
+							Проходил курс в январе 2021 года. Всё очень понравилось, информация подаётся легко, без лишней воды.
+							Кураторы сопровождают в течение всего курса, всё доходчиво объясняют. Спасибо! <cite> Пётр Петров -
+								Казань</cite>
+						</p>
+					</blockquote>
+					<blockquote>
+						<p>
+							Из-за пандемии осталась без работы. В конце апреля 2020 г. решила приобрести Ваш курс, тем более, что
+							зеркалка лет 5 валялась без дела. После курса стала фотографировать друзей, они стали советовать меня
+							своим друзьям итд. И вот сегодня у меня есть любимая работа со стабильной зарплатой! Курсом очень
+							довольна, спасибо! <cite>Марина Маринина - Санкт-Петербург</cite>
+						</p>
+					</blockquote>
+					<blockquote>
+						<p>
+							За две недели до свадьбы неожиданно остался без фотографа. Невеста в панике, у фотографов обычно всё
+							расписано на полгода вперед, так быстро не найти... Друзья посоветовали Вашу команду. Встретились в тот
+							же
+							день, всё обговорили, подписали договор. В день свадьбы всё прошло идеально, фотографов почти не было
+							заметно, а свадебный альбом получился очень прикольным, красочным и уютным! Спасибо Вам и Вашей команде!
+							<cite> Петр Петров - Москва</cite>
+						</p>
+					</blockquote>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end testimonials-->
 
 	<!-- FOOOTER 
 ================================================== -->
-	<div id="footer">
-		<footer class="row">
-			<p class="back-top floatright">
-				<a href="#top"><span></span></a>
-			</p>
-			<div class="four columns">
-				<h1>О нас</h1>
-				Мы хотим чтобы наши клиенты больше фотографировали!
+	<footer class="footer">
+		<div class="row">
+			<div class="aboutUs col-12 col-md">
+				<h5>О нас</h5>
+				<p class="footer">
+					Мы хотим чтобы наши клиенты больше фотографировали!</p>
 			</div>
-			<div class="four columns">
-				<h1>Мы в соцсетях: </h1>
+			<div class="social col-12 col-md">
+				<h5>Мы в соцсетях: </h5>
 				<a class="social facebook" href="#"></a>
 				<a class="social twitter" href="#"></a>
 				<a class="social instagram" href="#"></a>
 			</div>
-			<div class="four columns">
-				<h1 class="newsmargin">Подписаться на новости</h1>
-				<div class="row collapse newsletter floatright">
-					<div class="ten mobile-three columns">
-						<input type="text" class="nomargin" placeholder="Введите Вашу электронную почту">
-					</div>
-					<div class="two mobile-one columns">
-						<a href="#" class="postfix button expand">GO</a>
-					</div>
-				</div>
+			<div class="news col-12 col-md">
+				<h5 class="newsmargin">Подписаться на новости</h5>
+				<input type="text" class="nomargin" placeholder="Введите Вашу электронную почту">
+				<a href="#" class="postfix button expand">GO</a>
 			</div>
-		</footer>
-	</div>
+		</div>
+	</footer>
+
+
+
 
 	<!-- JAVASCRIPTS 
 ================================================== -->
@@ -308,6 +326,8 @@
 	<script src="./js/foundation.min.js"></script>
 	<script src="./js/elasticslideshow.js"></script>
 	<script src="./js/accordion.js"></script>
+	<script src="./bootstrap-5.0.0-alpha1-dist/bootstrap-5.0.0-alpha1-dist/js/bootstrap.min.js">
+	</script>
 	<!-- <script src="javascripts/payment.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/imask/3.4.0/imask.min.js"></script> -->
 
