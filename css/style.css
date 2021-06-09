@@ -105,7 +105,7 @@ h4 {
 h5 {
 	font-size: 30px;
 	color: rgb(255, 255, 255);
-	text-align: center;
+	text-align: left;
 }
 
 blockquote,
@@ -158,13 +158,13 @@ label.error {
 	font-style: normal;
 }
 
-.row {
+/* .row {
 	width: 980px;
 	min-width: 768px;
 	max-width: 100%;
 	margin: 0 auto;
-}
-
+} */
+/* 
 .row .row {
 	width: auto;
 	max-width: none;
@@ -179,7 +179,7 @@ label.error {
 
 .row .row.collapse {
 	margin: 0
-}
+} */
 
 .column,
 .columns {
@@ -295,6 +295,7 @@ a:focus {
 	/* flex-grow: 1; */
 	background: #000000;
 	color: #666;
+	border-top: #9e7ead 4px solid;
 	padding: 30px 0;
 	margin-top: 36px;
 }
@@ -338,16 +339,29 @@ a:focus {
 	background: #333;
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 	border: 1px solid #333;
-	border-radius: 2px;
 	color: #999;
-	display: block;
+	display: inline;
 	font-size: 12px;
-	margin: 0 0 12px 0;
 	padding: 6px;
 	height: 32px;
 	width: 100%;
 	transition: all 0.15s linear;
 	box-shadow: none;
+}
+
+p.aboutUs {
+	text-align: left;
+	margin: 0;
+}
+
+p.socials {
+	text-align: left;
+	margin: 0;
+}
+
+p.news {
+	text-align: left;
+	margin: 0;
 }
 
 .social {
@@ -616,13 +630,9 @@ div.alert-box.default {
 	background: #9e7ead url(../../images/minus.png) no-repeat;
 }
 
-.footer {
-	border-top: #9e7ead 4px solid;
-}
-
-.footer p {
+/* .footer p {
 	color: lightcoral;
-}
+} */
 
 .back-top a:hover {
 	background-color: #666;
@@ -661,7 +671,7 @@ a.projectdetail:hover {
 	flex-direction: column;
 	align-items: center;
 	width: auto;
-	height: 250px !important;
+	/* height: 250px !important; */
 }
 
 #testimonials {
@@ -680,3 +690,5 @@ a.projectdetail:hover {
 	font-weight: normal;
 	font-style: normal
 }
+
+@media screen {}

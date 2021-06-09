@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Проектная работа Людмилы Антонюк</title>
+	<!-- CSS Files-->
+
+	<link rel="stylesheet" href="./css/style.css">
+	<!-- <link rel="stylesheet" href="./css/responsive.css"> -->
+	<link rel="stylesheet" href="./bootstrap-5.0.0-alpha1-dist/bootstrap-5.0.0-alpha1-dist/css/bootstrap.css">
+	<link rel="stylesheet" href="./css/wedding.css">
+
+
+</head>
+
+<body>
+	<header id="header" class="fixed-top">
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<div class="container">
+				<a href="/index.html" class="navbar-brand">Фотостудия Марианны Смирновой</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent"
+					aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navContent">
+					<ul class="navbar-nav mr-auto mb-3 mb-lg-0">
+						<li class="nav-item">
+							<a href="/index.html" class="nav-link">Домой</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a href="" class="nav-link dropdown-toggle" id="navDrop" role="button" data-toggle="dropdown"
+								aria-expanded="false">Наши работы</a>
+							<ul class="dropdown-menu" aria-labelledby="navDrop">
+								<li><a href="/wedding.html" class="dropdown-item">Свадебные фото</a></li>
+								<li><a href="/food.html" class="dropdown-item">Фото еды</a></li>
+								<li><a href="/portrait.html" class="dropdown-item">Портреты</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">О нас</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Оплатить</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link">Контакты</a>
+						</li>
+					</ul>
+					<form action="" class="d-flex"></form>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+
+	<!-- ========================================= -->
+
+	<div class="product">
+		<div class="container">
+			<div class="row">
+				<div class="img-container">
+					<p class="food">
+						<img src="./img/wedding/1.jpg" id="bigImg" class="image">
+					</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="product-icons" onclick="showImg(event)">
+
+					<img src="./img/wedding/1.jpg">
+					<img src="./img/wedding/2.jpg">
+					<img src="./img/wedding/3.jpg">
+					<img src="./img/wedding/4.jpg">
+					<img src="./img/wedding/5.jpg">
+					<img src="./img/wedding/6.jpg">
+					<img src="./img/wedding/7.jpg">
+					<img src="./img/wedding/8.jpg">
+					<img src="./img/wedding/9.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- FOOOTER 
+================================================== -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="aboutUs col-12 col-md">
+					<h5>О нас</h5>
+					<p class="aboutUs">
+						Мы хотим чтобы наши клиенты больше фотографировали!</p>
+				</div>
+				<div class="socials col-12 col-md">
+					<h5>Мы в соцсетях: </h5>
+					<p class="socials">
+						<a class="social facebook" href="#"></a>
+						<a class="social twitter" href="#"></a>
+						<a class="social instagram" href="#"></a>
+					</p>
+				</div>
+				<div class="news col-6 col-md">
+					<h5 class="newsmargin">Подписаться на новости</h5>
+					<p class="news">
+						<input type="text" class="nomargin" placeholder="Введите Вашу электронную почту"><a href="#"
+							class="postfix button expand">GO</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+	<!-- JAVASCRIPTS 
+================================================== -->
+	<!-- Javascript files placed here for faster loading -->
+	<script src="./bootstrap-5.0.0-alpha1-dist/bootstrap-5.0.0-alpha1-dist/js/bootstrap.min.js"></script>
+	<script>
+		function showImg(event) {
+			event = event || window.event; // получаем объект события
+			var iconImg = event.Target || event.srcElement; // определяем текущий объект
+			if (iconImg.tagName == "IMG") { // если тип элемента - изображение, то
+				document.getElementById("bigImg").src = iconImg.getAttribute(
+					'src'); // меняем значение src у элемента с id="bigImg" на src текущего объекта 
+			}
+		}
+	</script>
+
+
+</body>
+
+</html>
